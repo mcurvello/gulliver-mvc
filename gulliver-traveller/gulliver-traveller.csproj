@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>gulliver_traveller</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
+    <Content Remove="wwwroot\img\avatars\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\img\avatars\" />
+    <Folder Include="Views\Hospedar\" />
+    <Folder Include="Views\Locacao\" />
+    <Folder Include="Views\Cultura\" />
+    <Folder Include="Views\Gastronomia\" />
+    <Folder Include="Views\Parques\" />
+    <Folder Include="Views\VidaNoturna\" />
+    <Folder Include="Views\DicasUteis\" />
+    <Folder Include="Views\Entretenimento\" />
+    <Folder Include="Views\Historia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Hospedar\" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Views\Locacao\" />
+    <None Remove="Views\Cultura\" />
+    <None Remove="Views\Gastronomia\" />
+    <None Remove="Views\Parques\" />
+    <None Remove="Views\VidaNoturna\" />
+    <None Remove="Views\DicasUteis\" />
+    <None Remove="Views\Entretenimento\" />
+    <None Remove="Views\Historia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+</Project>
